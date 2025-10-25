@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ai-api-service:
+    build: .
+    container_name: ai_api_service
+    ports:
+      - "8000:8000" # 映射外部 8000 埠到容器 8000 埠
+    # MLOps 實踐: 使用 env_file 安全地載入敏感資訊 (如 OPENAI_API_KEY)
+    env_file:
+      - .env
+    # MLOps 實踐: 掛載 volumes 以持久化儲存模型和 RAG 文件，方便調試和更新
+    volumes:
+      - ./app/models:/usr/src/app/app/models
+      - ./data:/usr/src/app/data
+    restart: always
