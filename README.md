@@ -50,7 +50,7 @@ ai-api-course/
 
 ### 1. 複製專案
 ```bash
-git clone <你的 repo>
+git clone https://github.com/BpsEason/ai-api-course.git
 cd ai-api-course
 ```
 
