@@ -197,10 +197,3 @@ A：直接編輯 `data/documents.txt`，重啟容器即可。
 
 歡迎提交 PR 或 Issue！  
 讓我們一起把這份教學模組變成 **業界最強的 AI API 入門範本**！
-
----
-
-**Made with ❤️ by AI Course Team**  
-`v3.0 | 2025-10-25`
-```
-
